@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main(){
+	int n;
+	int a[100];
+	int max;
+	printf("Nhap so phan tu n: ");
+	scanf("%d", &n);
+	for(int i = 0; i <= n; i++){
+		printf("a[%d] = ", i);
+		scanf("%d", &a[i]);
+	}
+	max = a[0];
+	for(int i = 1; i < n; i++){
+		if(a[i] > max){
+			max = a[i];
+		}
+	}
+	printf("So lon nhat trong mang la: %d", max);
+	return 0;
+}
